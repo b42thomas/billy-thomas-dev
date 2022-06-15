@@ -10,6 +10,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 25px;
     }
 </style>

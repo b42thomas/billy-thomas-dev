@@ -1,4 +1,4 @@
-export type WorkExperience = {
+export type EmploymentExperience = {
     employer: string,
     jobTitle: string,
     technologies: string[]

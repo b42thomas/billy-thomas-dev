@@ -13,5 +13,6 @@
 <style>
 	a {
 		margin: 10px;
+		color: mediumblue;
 	}
 </style>

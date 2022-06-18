@@ -1,6 +1,6 @@
-import type { WorkExperience } from "$lib/types/workExperience";
+import type { EmploymentExperience } from "$lib/types/EmploymentExperience";
 
-const afterSchoolHQ: WorkExperience = {
+const afterSchoolHQ: EmploymentExperience = {
     employer: "AfterSchool HQ",
     jobTitle: "Software Engineer",
     technologies: ["C#", ".NET", "React", "AWS", "Azure Devops", "YAML", "SQL"],
@@ -11,7 +11,7 @@ const afterSchoolHQ: WorkExperience = {
     ]
 }
 
-const developerTownStarts: WorkExperience = {
+const developerTownStarts: EmploymentExperience = {
     employer: "DeveloperTown Starts",
     jobTitle: "Growth Engineer",
     technologies: ["SQL", "React", "React Native", "Python", "OpenCV", "Node.js", "C#", "AWS", "Azure Devops"],
@@ -22,7 +22,7 @@ const developerTownStarts: WorkExperience = {
     ]
 }
 
-const developertTownStartsIntern: WorkExperience = {
+const developertTownStartsIntern: EmploymentExperience = {
     employer: "Developer Town Starts",
     jobTitle: "Growth Engineer Intern",
     technologies: ["SQL", "React", "Python", "Node.js", "d3.js", "AWS", "Azure Devops"],
@@ -32,10 +32,10 @@ const developertTownStartsIntern: WorkExperience = {
     ]
 }
 
-const workExperiences: readonly WorkExperience[] = [
+const employmentHistory: readonly EmploymentExperience[] = [
     afterSchoolHQ,
     developerTownStarts,
     developertTownStartsIntern
 ]
 
-export default workExperiences;
+export default employmentHistory;

@@ -1,18 +1,18 @@
 <script lang="ts">
-	import type { WorkExperience } from "$lib/types/workExperience";
+	import type { EmploymentExperience } from '$lib/types/employmentExperience';
 
-	export let workExperience: WorkExperience; 
+	export let employmentExperience: EmploymentExperience;
 </script>
 
 <div>
-	<h2>{workExperience.employer} - {workExperience.jobTitle}</h2>
-	{#each workExperience.technologies as technology }
+	<h2>{employmentExperience.employer} - {employmentExperience.jobTitle}</h2>
+	{#each employmentExperience.technologies as technology}
 		<span>{technology}</span>
 	{/each}
 	<ul>
-	{#each workExperience.bulletPoints as bulletPoint}
-		<li>{bulletPoint}</li>
-	{/each}
+		{#each employmentExperience.bulletPoints as bulletPoint}
+			<li>{bulletPoint}</li>
+		{/each}
 	</ul>
 </div>
 
@@ -21,11 +21,11 @@
 		width: 100%;
 	}
 	span {
-		 background-color: rgb(245, 237, 0);
-		 color: rgb(82, 1, 82);
-		 border-radius: 20px;
-		 margin: 5px;
-		 padding: 10px;
+		background-color: rgb(245, 237, 0);
+		color: rgb(82, 1, 82);
+		border-radius: 20px;
+		margin: 5px;
+		padding: 10px;
 	}
 
 	ul {

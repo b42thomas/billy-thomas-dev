@@ -3,14 +3,30 @@
 	import WorkExperience from '$lib/components/workExperience.svelte';
 
 	import contactLinks from '$data/contactLinks';
-	import workExperiences from '$data/workExperiences';
-
+	import employmentExperiences from '$data/employmentExperience';
 </script>
 
 <h1>Hi, I'm Billy Thomas</h1>
 
 <ContactLinks data={contactLinks} />
-{#each workExperiences as workExperience }
-	<WorkExperience workExperience={workExperience} />
+
+<h2>Employment History</h2>
+{#each employmentExperiences as workExperience}
+	<hr />
+	<WorkExperience employmentExperience={workExperience} />
 {/each}
 
+<h2>Education</h2>
+<hr />
+<h3>Butler University</h3>
+
+<style>
+	h2 {
+		align-self: flex-start;
+	}
+
+	hr {
+		width: 100%;
+		border: 2px solid lightgray;
+	}
+</style>

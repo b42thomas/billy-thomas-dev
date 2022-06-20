@@ -2,10 +2,19 @@
 	import type { EmploymentExperience } from '$lib/types/employmentExperience';
 
 	export let employmentExperience: EmploymentExperience;
+	const language = 'en-US';
+	const localeOptionMonth = 'long';
+	const localeOptionYear = 'numeric';
+	const startDate = employmentExperience.startDate.toLocaleString(language,  {month:localeOptionMonth, year:localeOptionYear});
+	const endDate = employmentExperience.endDate instanceof Date ? 
+		employmentExperience.endDate.toLocaleString(language, {month: localeOptionMonth, year: localeOptionYear}) 
+		: employmentExperience.endDate;
+
 </script>
 
 <div>
-	<h2>{employmentExperience.employer} - {employmentExperience.jobTitle}</h2>
+	<h3>{employmentExperience.employer} - {employmentExperience.jobTitle}</h3>
+	<p><em>{`${startDate} - ${endDate}`}</em></p>
 	{#each employmentExperience.technologies as technology}
 		<span>{technology}</span>
 	{/each}
@@ -19,6 +28,9 @@
 <style>
 	div {
 		width: 100%;
+	}
+	p {
+		margin-bottom: 20px;
 	}
 	span {
 		background-color: rgb(245, 237, 0);

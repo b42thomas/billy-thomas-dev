@@ -1,8 +1,10 @@
-import type { EmploymentExperience } from "$lib/types/EmploymentExperience";
+import type { EmploymentExperience } from "$lib/types/employmentExperience";
 
 const afterSchoolHQ: EmploymentExperience = {
     employer: "AfterSchool HQ",
     jobTitle: "Software Engineer",
+    startDate: new Date(2020, 8),
+    endDate: "current",
     technologies: ["C#", ".NET", "React", "AWS", "Azure Devops", "YAML", "SQL"],
     bulletPoints: [
         "Managed a remote team of overseas developers with multiple projects",
@@ -14,6 +16,8 @@ const afterSchoolHQ: EmploymentExperience = {
 const developerTownStarts: EmploymentExperience = {
     employer: "DeveloperTown Starts",
     jobTitle: "Growth Engineer",
+    startDate: new Date(2018, 0),
+    endDate: new Date(2020, 5),
     technologies: ["SQL", "React", "React Native", "Python", "OpenCV", "Node.js", "C#", "AWS", "Azure Devops"],
     bulletPoints: [
         "Collaborated with a portfolio of startups to fulfill a variety of technical needs",
@@ -25,6 +29,8 @@ const developerTownStarts: EmploymentExperience = {
 const developertTownStartsIntern: EmploymentExperience = {
     employer: "Developer Town Starts",
     jobTitle: "Growth Engineer Intern",
+    startDate: new Date(2017, 4),
+    endDate: new Date(2017, 11),
     technologies: ["SQL", "React", "Python", "Node.js", "d3.js", "AWS", "Azure Devops"],
     bulletPoints: [
         "Collaborated with a portfolio of startups to fulfill a variety of technical needs",

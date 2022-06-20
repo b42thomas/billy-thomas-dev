@@ -16,11 +16,17 @@
 	<WorkExperience employmentExperience={workExperience} />
 {/each}
 
-<h2>Education</h2>
-<hr />
-<h3>Butler University</h3>
+<div>
+	<h2>Education</h2>
+	<hr />
+	<h3>Butler University <span style="font-weight: normal">- B.S., Computer Science</span></h3>
+	<p>August 2014 - December 2017</p>
+</div>
 
 <style>
+	div {
+		width: 100%;
+	}
 	h2 {
 		align-self: flex-start;
 	}

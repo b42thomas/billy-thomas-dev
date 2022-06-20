@@ -1,12 +1,13 @@
 <script lang="ts">
-	import type { ContactLink } from "$lib/types/contactLink";
+	import type { ContactLink } from '$lib/types/contactLink';
 
 	export let data: readonly ContactLink[];
 </script>
 
 <div>
 	{#each data as contactLink}
-		<a href={contactLink.url} data-test={contactLink.dataTest}>{contactLink.text}</a>
+		<a href={contactLink.url} target="_blank" data-test={contactLink.dataTest}>{contactLink.text}</a
+		>
 	{/each}
 </div>
 

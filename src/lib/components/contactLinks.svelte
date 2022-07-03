@@ -12,6 +12,10 @@
 </div>
 
 <style>
+	div {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	a {
 		margin: 10px;
 		color: mediumblue;

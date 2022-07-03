@@ -4,12 +4,13 @@ const afterSchoolHQ: EmploymentExperience = {
     employer: "AfterSchool HQ",
     jobTitle: "Software Engineer",
     startDate: new Date(2020, 8),
-    endDate: "current",
+    endDate: "Currently Employed",
     technologies: ["C#", ".NET", "React", "AWS", "Azure Devops", "YAML", "SQL"],
     bulletPoints: [
         "Managed a remote team of overseas developers with multiple projects",
         "Helped reduced total deployment pipeline time (commit to production) from ~40 min to ~15 min allowing a for a quick rollback recovery of 2 min",
         "Built and delivered code using mob/pair programming practices",
+        "Optimized search page SQL query, bringing respone time from several seconds to milliseconds"
     ]
 }
 

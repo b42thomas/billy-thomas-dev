@@ -2,7 +2,7 @@ export type EmploymentExperience = {
     employer: string,
     jobTitle: string,
     startDate: Date,
-    endDate: Date | "current",
+    endDate: Date | "Currently Employed",
     technologies: string[]
     bulletPoints: string[]
 }

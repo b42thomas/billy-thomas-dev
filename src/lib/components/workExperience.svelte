@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { EmploymentExperience } from '$lib/types/employmentExperience';
+	import TechnologyList from './technologyList.svelte';
 
 	export let employmentExperience: EmploymentExperience;
 	const language = 'en-US';
@@ -15,9 +16,7 @@
 <div>
 	<h3>{employmentExperience.employer} - {employmentExperience.jobTitle}</h3>
 	<p><em>{`${startDate} - ${endDate}`}</em></p>
-	{#each employmentExperience.technologies as technology}
-		<span>{technology}</span>
-	{/each}
+	<TechnologyList technologies={employmentExperience.technologies}/>
 	<ul>
 		{#each employmentExperience.bulletPoints as bulletPoint}
 			<li>{bulletPoint}</li>
@@ -28,23 +27,15 @@
 <style>
 	div {
 		width: 100%;
+	
 	}
 	p {
 		margin-bottom: 20px;
 	}
-	span {
-		background-color: rgb(245, 237, 0);
-		color: rgb(82, 1, 82);
-		border-radius: 20px;
-		margin: 5px;
-		padding: 10px;
-	}
-
 	ul {
 		margin-top: 25px;
 		font-size: 16px;
 	}
-
 	li {
 		margin: 5px;
 	}

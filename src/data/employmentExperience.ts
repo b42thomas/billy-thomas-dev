@@ -10,7 +10,7 @@ const afterSchoolHQ: EmploymentExperience = {
         "Managed a remote team of overseas developers with multiple projects",
         "Helped reduced total deployment pipeline time (commit to production) from ~40 min to ~15 min allowing a for a quick rollback recovery of 2 min",
         "Built and delivered code using mob/pair programming practices",
-        "Optimized search page SQL query, bringing respone time from several seconds to milliseconds"
+        "Optimized search page SQL query, bringing response time from several seconds to milliseconds"
     ]
 }
 

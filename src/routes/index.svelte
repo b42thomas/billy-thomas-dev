@@ -34,7 +34,7 @@
 	<h3>Smokey Frame</h3>
 	<p>May 2020</p>
 	<TechnologyList technologies={["AWS Lambda", "AWS S3", "Raspberry Pi", "Node.js", "Twilio"]} />
-	<p>A digital picture frame you can SMS pictures to via an AWS Lambda function uploading to a S3 bucket</p>
+	<p>A digital picture frame you can SMS pictures to via an AWS Lambda function uploading to a S3 bucket.  A present for mother's day so I can send my mom pictures of my dog, Smokey 🐶</p>
 	<div class="project-img-div">
 		<img class="smokeyframe-img" alt="a computer monitor displaying a dog" src={smokeyFrame} />
 		<img class="smokeyframe-img" alt="screenshot of SMS upload to the smokey frame" src={smokeyFrameSMS} />
@@ -43,7 +43,10 @@
 	<h3>Pickle - Running Bases</h3>
 	<p>July 2016</p>
 	<TechnologyList technologies={["Swift"]} />
-	<p>Unfortunatley I've stopped paying the Apple developer fee so it's removed from the app store :/ </p>
+	<p>
+		A running bases games, where the player tries to tag the bases as many times as possible without getting 
+		caught on the base where the ball is.  The two basemen throw the ball back and forth to which base the player is closest to.
+	</p>
 	<div class="project-img-div">
 		<img id="pickleImg" alt="8 bit cartoon man running between two baseball players" src={pickleScreenShot} />
 	</div>

@@ -45,7 +45,7 @@
 	<TechnologyList technologies={["Swift"]} />
 	<p>
 		A running bases games, where the player tries to tag the bases as many times as possible without getting 
-		caught on the base where the ball is.  The two basemen throw the ball back and forth to which base the player is closest to.
+		caught on the base where the ball is.  The two basemen throw the ball back and forth to whichever base the player is closest to.
 	</p>
 	<div class="project-img-div">
 		<img id="pickleImg" alt="8 bit cartoon man running between two baseball players" src={pickleScreenShot} />

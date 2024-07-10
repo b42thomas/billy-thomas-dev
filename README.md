@@ -36,3 +36,8 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+## Deploying
+
+Automatic Deployments are setup in Vercel, so all you have to do is commit to main and push and it should be live on billythomasdev.com in a few minutes :) 

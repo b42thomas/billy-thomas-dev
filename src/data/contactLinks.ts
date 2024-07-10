@@ -20,6 +20,11 @@ const contactLinks: readonly ContactLink[] = [
         url: "https://billythomasdev.com",
         dataTest: "personalsite",
         text: "Personal Site"
+    },
+    {
+        url: "https://emotion.fm",
+        dataTest: "emotionfm",
+        text: "Emotion FM"
     }
 ]
 

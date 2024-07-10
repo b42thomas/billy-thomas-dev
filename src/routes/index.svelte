@@ -31,6 +31,12 @@
 <div class="page-break">
 	<h2>Projects</h2>
 	<hr class="page-break"/>
+	<h3>Emotion FM</h3>
+	<p>September 2023</p>
+	<TechnologyList technologies={["HTML", "CSS", "Javascript", "Spotify API", "Vercel"]} />
+	<p>A retro-looking UI to looking up playlists on Spotify by "dialing" into your emotions</p>
+	<a href="https://emotion.fm">emotion.fm</a>
+	<hr class="page-break"/>
 	<h3>Smokey Frame</h3>
 	<p>May 2020</p>
 	<TechnologyList technologies={["AWS Lambda", "AWS S3", "Raspberry Pi", "Node.js", "Twilio"]} />

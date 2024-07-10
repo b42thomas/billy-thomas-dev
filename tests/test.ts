@@ -10,15 +10,19 @@ test('index page has expected h1', async ({ page }) => {
 });
 
 test('contact info is on page', async ({ page}) => {
-	var email = await page.locator('[data-test=email]');
+	const email = await page.locator('[data-test=email]');
 	expect(await email.textContent()).toBe('billythomasdev@gmail.com');
 	expect(await email.getAttribute('href')).toBe("mailto:billythomasdev@gmail.com");
 
-	var linkedInProfile =  await page.locator('data-test=linkedinprofile');
+	const linkedInProfile =  await page.locator('data-test=linkedinprofile');
 	expect(await linkedInProfile.textContent()).toBe('LinkedIn');
 	expect(await linkedInProfile.getAttribute('href')).toBe('https://www.linkedin.com/in/billy-thomas-60330012b/');
 	
-	var github = await page.locator('data-test=github');
+	const github = await page.locator('data-test=github');
 	expect(await github.textContent()).toBe('Github');
 	expect(await github.getAttribute("href")).toBe('https://github.com/b42thomas');
+
+	const emotionfm = await page.locator('data-test=emotionfm')
+	expect(await emotionfm.textContent()).toBe('Emotion FM')
+	expect(await emotionfm.getAttribute("href")).toBe('https://emotion.fm')
 });
